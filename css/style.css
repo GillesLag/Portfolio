@@ -22,11 +22,7 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
+    background-color: rgba(121, 116, 116, 0.39);
   }
 
   .alignLeft {
@@ -41,7 +37,6 @@
     width: 50%;
   }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
