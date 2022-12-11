@@ -9,127 +9,247 @@
     <title>Gilles Lagrillière</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/slick-theme.css">
+    <link rel="stylesheet" href="vendor/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Gilles Lagrillière</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="cv.html">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="ervaring.html">Ervaring</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="hobbys.html">Hobbyy's/Intresses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="contact.html">Contact</a>
-              </li>
-            </ul>
+  <!--Navigatiebar-->
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Gilles Lagrillière</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="ervaring.html">Ervaring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="hobbys.html">Hobbyy's/Intresses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navigatiebar-->
+
+  <div class="container">
+    <div class="row pb-2">
+      <div class="col-5">
+        <h2>Werkervaring</h2>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-4">
+        <h2>Opleidingen</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <!-- Werkervaring -->
+      <div class="col-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link text-black active" id="nav-codraft-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false" onclick="ChangeCompany(this)">Codraft</button>
+            <button class="nav-link text-black" id="nav-stadsbader-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" onclick="ChangeCompany(this)">Stadsbader</button>
+            <button class="nav-link text-black" id="nav-exilab-tab" data-toggle="tab" data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true" onclick="ChangeCompany(this)">Exilab</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-codraft" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h5>Technisch Tekenaar, september 2020 - heden</h5>
+            <p>
+              Plugins schrijven in C# dat helpt bij het modelleren van het 3D-model in Revit.<br>
+              Communiceren met klanten om zo een correct mogelijk model te kunnen afleveren.<br>
+              Het maken van project templates.<br>
+              Uittekenen van RevitFamilies.<br>
+              Het modelleren van sanitaire afvoeren en toevoeren.<br>
+              Annoteren van de plannen.<br>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="nav-stadsbader" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h5>Werfleider, mei 2019 - septempber 2020</h5>
+            <p>
+              Elke dag de planning opstellen.<br>
+              Controleren van de uitgevoerde werken.<br>
+              Het leiden van de werfvergaderingen.<br>
+              Communiceren met onderaannemers voor ze in te plannen.<br>
+              Oplossingen zoeken voor problemen op de werf.<br>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="nav-exilab" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h5>Boukundig Tekenaar, september 2017 - april 2019</h5>
+            <p>
+              Het modelleren van het bouwkundig model in Revit.<br>
+              Annoteren van de plannen.<br>
+              Het maken van RevitFamilies.<br>
+              Plotten van de gemaakte plannen.<br>
+            </p>
           </div>
         </div>
-      </nav>
+      </div>
+      <!-- Werkervaring -->
 
-    <div>
-        <div>
-            <h2>Werkervaring</h2>
-            <div>
-                <ul>
-                    <li>Technisch tekenaar - Codraft NV 2019 - heden
-                        <ul>
-                            <li>Uittkenen van piping met Revit</li>
-                            <li>Annoteren van de plannen</li>
-                            <li>Het opzetten van een project in Revit</li>
-                            <li>Plugin/macro's schrijven voor Revit</li>
-                        </ul> 
-                    </li>
-                    <li>Werfleider - Stadsbader NV 2018 - 2019
-                        <ul>
-                            <li>Meetstaten controleren</li>
-                            <li>Planning maken</li>
-                            <li>De werken controleren</li>
-                            <li>Werfvergadringen leiden</li>
-                        </ul>
-                    </li>
-                    <li>Bouwkundig tekenaar - Exilab NV 2017 - 2018
-                        <ul>
-                            <li>Uittkenen van bouwkundige modellen in Revit</li>
-                            <li>Revit Family's aanmaken</li>
-                            <li>plannen annoteren</li>
-                        </ul>
-                    </li>
-                </ul>
+      <div class="col-3"></div>
+      
+      <!-- opleidingen -->
+      <div class="col-4">
+        <div class="list-group">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Graduaat Programmeren</h5>
             </div>
-        </div>
-        <div>
-            <h2>Skills</h2>
-            <div>
-                <ul>
-                    <li>Revit: uitstekend</li>
-                    <li>C#: goed</li>
-                    <li>HTML: matig</li>
-                    <li>Javascript: matig/goed</li>
-                    <li>Microsoft Office: goed</li>
-                </ul>
+            <p class="mb-1 pb-2">Thomas More, Lier<br>
+              <small class="text-muted">Februari 2021 - heden</small>
+            </p>
+
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bachelor in de Bouwkunde</h5>
             </div>
+            <p class="mb-1 pb-2">Thomas More, Geel<br>
+              <small class="text-muted">September 2013 - Juni 2017</small>
+            </p>
+
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">TSO Hout</h5>
+            </div>
+            <p class="mb-1">VTI, Lier<br>
+              <small class="text-muted">September 2007 - Juni 2013</small>
+            </p>
         </div>
+      </div>
+      <!-- opleidingen -->
+
     </div>
-    <div>
-        <div>
-            <h2>Positieve eigenschappen</h2>
-            <ul>
-                <li>Stressbestendig</li>
-                <li>Geduldig</li>
-                <li>Zelfstandig</li>
-            </ul>
+    <div class="row pt-5">
+      <h2 class="col-4">Extracurriculaire activiteiten</h2>
+      <div class="col-4"></div>
+      <h2 class="col-4">Talenkennis</h2>
+    </div>
+    <div class="row">
+    <!--Extracurriculaire activiteiten-->
+      <div class="col-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link text-black active" id="nav-codraft-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Chiroleider</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-codraft" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h5>Chiro Jong Leven, september 2013 - augustus 2017</h5>
+            <p>
+              Het maken van spelletjes voor de kinderen iedere zondag.<br>
+              Wekelijks de leidingsvergaderingen actief bijwonen.<br>
+              Toezicht houden over de kinderen.<br>
+              Jaarlijks het Chiro kamp organiseren.<br>
+            </p>
+          </div>
         </div>
-        <div>
-            <h2>Opleidingen</h2>
-            <div>
-                <ul>
-                    <li> Graduaat Programmeren, Thomas More Lier 2022 - 2024</li>
-                    <li> Bachelor in de bouwkunde, Thomas More Geel 2013 - 2017</li>
-                    <li> TSO Hout, VTI Lier 2007 - 2013</li>
-                </ul>
-            </div>
+      </div>
+    <!--Extracurriculaire activiteiten-->
+
+    <div class="col-3"></div>
+
+    <!--Talenkennis-->
+      <div class="col">
+        <h5>Nederlands</h5>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
+        <h5>Engels</h5>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5>Frans</h5>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+  <!--Talenkennis-->
     </div>
 
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0 col">
-            <div class="row">
-                <!-- Section: Social media -->
-                <section class="mb-4 col">
-                    <!-- Linkedin -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gilles-lagrilli%C3%A8re-b055a712b/" role="button" target="_blank"
-                    ><i class="fa fa-linkedin"></i
-                    ></a>
-                    <!-- Github -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GillesLag" role="button" target="_blank"
-                    ><i class="fa fa-github"></i
-                    ></a>
-                </section>
-                <!-- Copyright -->
-                <div class="text-center p-3 col">
-                © 2022 Copyright:
-                <a class="text-white">Gilles Lagrillière</a>
-                </div>
+  <!--Skills-->
+    <div class="row-6 text-center">
+      <div class="col">
+        <h5>Skills</h5>
+        <div class="for_slick_slider multiple-items">
+          <div class="items">
+            <img class="p-2" src="images/C-Sharp.png" alt="">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-      </footer>
+          </div>
+          <div class="items">
+            <img class="p-2" src="images/javascript.png" alt="">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 66%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="items">
+            <img class="p-2" src="images/html.jpg" alt="">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 66%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="items">
+            <img class="p-2" src="images/css.png" alt="">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="items">
+            <img class="p-2" src="images/vb.png" alt="">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Skills-->
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!--Footer-->
+  <footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+    <div class="container p-4 pb-0 col">
+      <div class="row">
+        <!-- Section: Social media -->
+        <section class="mb-4 col">
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gilles-lagrilli%C3%A8re-b055a712b/" role="button" target="_blank"
+            ><i class="fa fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GillesLag" role="button" target="_blank"
+            ><i class="fa fa-github"></i
+            ></a>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3 col">
+        © 2022 Copyright:
+        <a class="text-white">Gilles Lagrillière</a>
+      </div>
+    </div>
+  </footer>
+  <!--Footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="vendor/slick.min.js"></script>
+  <script src="js/Cv.js"></script>
 </body>
 </html>
