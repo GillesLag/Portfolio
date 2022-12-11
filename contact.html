@@ -13,7 +13,7 @@
         rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Gilles Lagrillière</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,48 +41,90 @@
         </div>
       </nav>
 
-    <div>
-        <div>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-5">
             <h2>Heb je een vraag?</h2>
-            <form action="send">
-                <label for="fname">Voornaam</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Achternaam</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="email">E-mailadress</label><br>
-                <input type="text" name="email" id="email"><br>
-                <label for="onderwerp">Onderwerp</label><br>
-                <input type="text" name="onderwerp" id="onderwerp"><br>
-                <label for="onderwerp">Bericht</label><br>
-                <textarea name="bericht" rows="10" cols="40"></textarea><br>
-                <input type="submit" value="Verzend">
+            <form>
+              <div class="mb-3">
+                <label for="voornaam" class="form-label">Voornaam</label>
+                <input type="text" class="form-control" id="voornaam" required>
+              </div>
+              <div class="mb-3">
+                <label for="naam" class="form-label">Naam</label>
+                <input type="text" class="form-control" id="naam" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              </div>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label">Intresse in skills</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="C#">
+                    <label class="form-check-label" for="C#">
+                      C#
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="javascript">
+                    <label class="form-check-label" for="javascript">
+                      Javascript
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="HTML">
+                    <label class="form-check-label" for="HTML">
+                      HTML
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3 col">
+                  <label class="form-label"></label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="CSS">
+                    <label class="form-check-label" for="CSS">
+                      CSS
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="SQL">
+                    <label class="form-check-label" for="SQL">
+                      SQL
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="visual basic">
+                    <label class="form-check-label" for="visual basic">
+                      visual basic
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="vraag" class="form-input">Vraag</label>
+                <textarea class="form-control" id="vraag" cols="30" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+          </div>
+          <div class="col-2"></div>
+          <div class="col">
+            <h2>Je kan me ook vinden op</h2>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/gilles-lagrilli%C3%A8re-b055a712b/" role="button" target="_blank"
+            ><i class="fa fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/GillesLag" role="button" target="_blank"
+            ><i class="fa fa-github"></i
+            ></a>
+          </div>
+          </div>
         </div>
-    </div>
-    <div>
-        <table>
-            <caption>Geen idee</caption>
-            <tr>
-                <th>wat</th>
-                <th>voor</th>
-                <th>een</th>
-                <th>tabel</th>
-            </tr>
-            <tr>
-                <td>ik</td>
-                <td>moet</td>
-                <td colspan="2">maken</td>
-            </tr>
-            <tr>
-                <td>hopelijk is</td>
-                <td>dit</td>
-                <td>goed</td>
-                <td>genoeg</td>
-            </tr>
-        </table>
-    </div>
 
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-center text-white fixed-bottom">
         <!-- Grid container -->
         <div class="container p-4 pb-0 col">
             <div class="row">
