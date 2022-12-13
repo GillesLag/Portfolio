@@ -3,14 +3,17 @@
 }
 
 .for_slick_slider .items {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   margin: 25px;
 }
 
 .for_slick_slider .items img{
-  width: 350px;
-  height: 250px;
+  width: 60%;
+  height: 75%;
+  display: block;
+  margin: auto;
+
 }
 
 .slick-prev:before {
@@ -26,7 +29,7 @@
 }
 
 .progress {
-  width: 350px;
+  width: 75%;
 }
 
 .w-100 {
